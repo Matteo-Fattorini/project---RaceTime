@@ -48,6 +48,7 @@ $(document).ready(function () {
       currentSpan = $(".result-span")[round];
       if (!toggle && round < 10) {
         penality = 1;
+        userTimes.push(penality);
         $(".timer").html("Troppo Presto!");
         $(currentSpan).html(parseFloat(penality));
         round++;
